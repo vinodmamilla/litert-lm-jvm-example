@@ -49,16 +49,16 @@ Evaluates multimodal embeddings (Text, Vision, and Audio) using `EmbeddingEngine
 
 ```shell
 # Linux / macOS (runs CPU and GPU benchmarks by default)
-app/build/install/app/bin/embed /path/to/embeddinggemma-2-740m.litertlm all
+app/build/install/app/bin/embed /path/to/embedding-gemma-v2.litertlm all
 
 # Specific backend: 'cpu' or 'gpu'
-app/build/install/app/bin/embed /path/to/embeddinggemma-2-740m.litertlm gpu
+app/build/install/app/bin/embed /path/to/embedding-gemma-v2.litertlm gpu
 
 # Windows
-.\app\build\install\app\bin\embed.bat C:\path\to\embeddinggemma-2-740m.litertlm all
+.\app\build\install\app\bin\embed.bat C:\path\to\embedding-gemma-v2.litertlm all
 ```
 
-* **Recommended Model**: [embeddinggemma-2-740m.litertlm](https://huggingface.co/litert-community/embeddinggemma-2-740m-litert-lm/blob/main/embeddinggemma-2-740m.litertlm) from the [HuggingFace LiteRT Community](https://huggingface.co/litert-community).
+* **Recommended Model**: `embedding-gemma-v2.litertlm`
 * **Sample Assets**: Included in the [`samples/`](samples/) directory:
   - `samples/vision/` (`apple.png`, `apple_similar.png`, `blue_car.png`)
   - `samples/audio/` (`have_a_wonderful_day.wav`, `have_a_wonderful_day_similar.wav`, `synthetic_tone_440hz.wav`)
