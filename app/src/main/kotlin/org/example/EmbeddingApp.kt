@@ -324,12 +324,13 @@ fun resolveEmbeddingModelPath(providedPath: String?): String {
   }
 
   val candidates = listOf(
+    File("embeddinggemma-2-740m.litertlm"),
     File("embedding-gemma-v2.litertlm"),
   )
   for (c in candidates) {
     if (c.exists()) return c.absolutePath
   }
-  throw IllegalArgumentException("Could not find embedding-gemma-v2.litertlm. Please provide path as first argument.")
+  throw IllegalArgumentException("Could not find embeddinggemma-2-740m.litertlm or embedding-gemma-v2.litertlm. Please provide path as first argument.")
 }
 
 // ==============================================================================
